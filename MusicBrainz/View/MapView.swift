@@ -35,8 +35,9 @@ struct MapView: View {
                 MapVM.showMap.toggle()
             }label: {
                Text("return")
-                Text("\(MapVM.time)")
+               
             }
+                    Text("\(MapVM.time)")
                 }
             
             .frame(width: UIScreen.main.bounds.width-20, height: 40)
