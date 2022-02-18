@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var MapVM : MapViewModel
+   
+    @State var data: [PlacesModel] = []
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            if MapVM.showMap == false {
+                MainView()
+            }else{
+                MapView()
+            }
+        }
     }
 }
 
@@ -19,3 +28,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
