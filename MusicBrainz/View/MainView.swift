@@ -11,7 +11,6 @@ import SwiftUI
 struct MainView: View {
    
     @State var data: [PlacesModel] = []
-    @EnvironmentObject var MainVM : MainViewModel
     @EnvironmentObject var MapVM : MapViewModel
     
     var body: some View {
