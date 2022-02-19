@@ -21,8 +21,8 @@ class MapViewModel : ObservableObject{
     @Published var name : String?
     @Published var begin : Int?
     @Published var end : Int?
-    @Published var longitude : Double = -122.440100
-    @Published var latitude : Double = 37.786996
+    @Published var longitude : Double = 0
+    @Published var latitude : Double = 0
     @Published var showMap : Bool = false
     @Published var time: Int = 10
     
