@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 class Getdata : ObservableObject{
     
     func getdata(completion: @escaping ([PlacesModel]) -> ()) {
