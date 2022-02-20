@@ -20,7 +20,7 @@ struct MapView: View {
         ZStack {
            
             
-            var annotationItems = [  // pin cordinates
+            var annotationItems = [  // pin coordinates
                 MyAnnotationItem(coordinate: CLLocationCoordinate2D(latitude: self.MapVM.latitude, longitude: self.MapVM.longitude))
             ]
             
